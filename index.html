@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- Font -->
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section>
+        <div class="container d-flex justify-content-center flex-column ">
+            <div class="headline d-flex justify-content-center mt-5 mb-4">
+                <h1>Bookmarker</h1>
+            </div>
+            <div class="body d-flex justify-content-center">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+            </div>
+            <div class="form">
+                <div class="site-name w-100 d-flex flex-column justify-content-center my-3">
+                    <label for="bookmarkName" class="pb-2 fw-semibold ">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name</label>
+                    <input type="text" placeholder="Bookmark Name" class="form-control " id="bookmarkName"  >
+                </div>
+                <div class="site-url w-100 d-flex flex-column justify-content-center">
+                    <label for="bookmarkURL" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                    <input type="url" placeholder="Website URL" class="form-control " id="bookmarkURL">
+                </div>
+                <div class="submit text-center">
+                    <button class="btn btn-danger my-4 mx-auto   id="submitBtn" onclick="addBookmark()">Submit</button>
+                </div>
+            </div>
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableContent">
+                    
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
